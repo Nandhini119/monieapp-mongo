@@ -6,6 +6,10 @@ let express = require('express'),
     routes = require('./routes/index');
 
 const app = express();
+var dbConfig = require('./database.js');
+var mongoose = require('mongoose');
+mongoose.connect(dbConfig.url);
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -16,6 +20,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public/html')));
+app.use(express.static(path.join(__dirname, 'public/js')));
+app.use(express.static(path.join(__dirname, 'public/css')));
 
 app.use('/', routes);
 

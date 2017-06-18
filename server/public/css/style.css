@@ -1,8 +1,27 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+table
+{
+   /* border:1px solid white;*/
+    color:white;
 }
-
-a {
-  color: #00B7FF;
+#listmovies
+{
+    width:500px;
+}
+h1
+{
+    color:white;
+    text-shadow: 2px 2px 5px red;
+}
+label 
+{
+    color : white;
+}
+body
+{
+    background : url('https://cdn.hoyts.com.au/content/css/img/bg_webskin.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    
+    
+    
 }
