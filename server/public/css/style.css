@@ -18,7 +18,7 @@ label
 }
 body
 {
-    background : url('https://cdn.hoyts.com.au/content/css/img/bg_webskin.jpg');
+    background : url('../image/movieapp-bkg.jpg');
     background-repeat : no-repeat;
     background-size : cover;
     

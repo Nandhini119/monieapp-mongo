@@ -13,7 +13,6 @@ let signupController = {
             password : req.query.password,
            
         };
-        
         signupschema.findOne({email : req.query.email},function(err,data)
     {
         if(data == null )
