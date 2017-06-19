@@ -1,6 +1,6 @@
 let express = require('express'),
     path = require('path');
-    favicon = require('serve-favicon'),
+favicon = require('serve-favicon'),
     logger = require('morgan'),
     bodyParser = require('body-parser'),
     cookieParser = require('cookie-parser'),
@@ -21,10 +21,14 @@ app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(session({secret : 'anystringoftext',
-                            saveUninitialized : true,
-                            resave : true}));
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(session({
+    secret: 'anystringoftext',
+    saveUninitialized: true,
+    resave: true
+}));
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public/html')));
 app.use(express.static(path.join(__dirname, 'public/js')));

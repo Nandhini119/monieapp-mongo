@@ -1,27 +1,21 @@
-table
-{
-   /* border:1px solid white;*/
-    color:white;
+/*table font color*/
+table {
+    color: white;
 }
-#listmovies
-{
-    width:500px;
+/*table width*/
+#
+listmovies {
+    width: 500 px;
 }
-h1
-{
-    color:white;
-    text-shadow: 2px 2px 5px red;
+h1 {
+    color: white;
+    text - shadow: 2 px 2 px 5 px red;
 }
-label 
-{
-    color : white;
+label {
+    color: white;
 }
-body
-{
-    background : url('../image/movieapp-bkg.jpg');
-    background-repeat : no-repeat;
-    background-size : cover;
-    
-    
-    
+body {
+    background: url('../image/movieapp-bkg.jpg');
+    background-repeat: no - repeat;
+    background-size: cover;
 }

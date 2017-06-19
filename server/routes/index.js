@@ -5,11 +5,14 @@ let signupControl = require('../controller/signupcontrol');
 let loginControl = require('../controller/logincontrol');
 let movieSearch = require('../controller/moviecontrol');
 
- 
- router.get('/signup',signupControl.addNewUser);
- router.get('/login',loginControl.login);
- router.get('/search',movieSearch.search);
- router.post('/addtofav',movieSearch.favourite);
- router.get('/viewfav',movieSearch.viewfavourite);
- router.get('/deletefavourite',movieSearch.delfavourite);
+/*route for signup*/
+router.get('/signup', signupControl.addNewUser);
+/*route for logging in*/
+router.get('/login', loginControl.login);
+/*routes for movies add,delete,search,view*/
+router.get('/search', movieSearch.search);
+router.post('/addtofav', movieSearch.favourite);
+router.get('/viewfav', movieSearch.viewfavourite);
+router.get('/deletefavourite', movieSearch.delfavourite);
+
 module.exports = router;
